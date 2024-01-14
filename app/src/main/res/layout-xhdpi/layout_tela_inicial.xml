@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bege"
+    android:keepScreenOn="true"
+    android:forceDarkAllowed="false">
+
+
+    <TextView
+        android:id="@+id/nomeJogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SEQUÊNCIA\nDE\nCORES"
+        android:fontFamily="casual"
+        android:textSize="53sp"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/iniciar" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/iniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:text="Iniciar jogo"
+        android:textAllCaps="false"
+        android:textSize="45sp"
+        android:textColor="@color/black"
+        android:background="@drawable/bg_button"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nomeJogo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:hapticFeedbackEnabled="true" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
